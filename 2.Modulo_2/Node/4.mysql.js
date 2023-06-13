@@ -28,7 +28,7 @@ con.connect(function(err) {
 con.query(readAll, function (err, result) {
   if (err) throw err;
   const json = JSON.parse(JSON.stringify(result, null, 2));
-  console.log("Query 1:")
+  console.log("Salida Query 1:")
   console.log(json[0]);
 });
 
